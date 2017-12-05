@@ -1,0 +1,55 @@
+/*全体設定*/
+
+* {
+    margin: 0;
+    padding: 0;
+    position: center;
+    text-decoration: none;
+}
+
+
+
+/*上部設定*/
+
+#header {
+    height: 124px;
+   /* width: 1343px; */
+    width: max;
+    margin: auto;
+}
+
+/*main設定*/
+
+#body {
+    height: 1390px;
+    width: 963px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+#body_bg {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/main_bg.jpg");
+    background-size: auto 100%;
+}
+
+
+/*下部設定*/
+
+#footer {
+    clear: both;
+    background-color: #fff8cc;
+    height: 489px;
+    /* width: 1343px; */
+    width: max;
+    background-image: url("../images/footer_bg.jpg");
+    background-size: width auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#main {
+    width: 704px;
+    float: left;
+}
