@@ -2,61 +2,52 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" 　content="コーディング課題">
     <title>seraku_bank</title>
     <link rel="stylesheet" href="resource/css/stylesheet.css">
-    <link rel="stylesheet" href="resource/css/header.css">
-    <link rel="stylesheet" href="resource/css/main.css">
-    <link rel="stylesheet" href="resource/css/sub.css">
-    <link rel="stylesheet" href="resource/css/footer.css">
-
 </head>
 
 <body>
     <div id="header">
         <!--メニュー上部-->
-        <div id="header01">
-            <div id="header01_logo">
+        <div id="headerArea">
+            <div id="headerArea_logo">
                 <img src="resource/images/logo.png" alt="せらく銀行ロゴ">
             </div>
-            <div id="header01_info">
-                <div id="header01_01">
+            <div id="headerArea_info">
+                <div id="headerArea_code">
                     <p>金融機関コード：0917</p>
                 </div>
-                <div id="header01_02">
-                	
-	                    <p>文字が変更できます</p>
-	                    <ul id="changeBtn">
-	                    	<li id="fontSizeS"><a href="#" alt="小"></a></li>
-	                  	 	<li id="fontSizeM"><a href="#" alt="中"></a></li>
-	                 	 	<li id="fontSizeL"><a href="#" alt="大"></a></li>
-	                 	 </ul>
-                 	
+                <div id="headerArea_fontSize">
+                    <p>文字が変更できます</p>
+                    <ul id="changeBtn">
+                        <li id="fontSizeS"><a href="#" alt="小"></a></li>
+                        <li id="fontSizeM"><a href="#" alt="中"></a></li>
+                        <li id="fontSizeL"><a href="#" alt="大"></a></li>
+                    </ul>
                 </div>
-
-               
-               <script type="text/javascript" src="resource/js/fontSize.js"></script>
-
-                <div id="header01_03">
-                    <div id="header01_03_1">
-                        <div class="header01_03_gs"><a href="#" alt="globalSite"></a></div>
-                        <div class="header01_03_sm"><a href="#" alt="siteMap"></a></div>
+                <div id="headerArea_form">
+                    <div id="form_map">
+                        <div class="headerArea_form_gs"><a href="#" alt="globalSite"></a></div>
+                        <div class="headerArea_form_sm"><a href="#" alt="siteMap"></a></div>
                     </div>
-                    
-					<div id="header_01_03_2">
-						<form action="" name="search" method="get">
-							<dl class="search">
-								<dt><input type="text" name="search" value="" placeholder="検索ワードを入力" /></dt>
-       						 <dd><button><span></span></button></dd>
-   							 </dl>
-						</form>
-					</div>
-					
+                    <div id="from_search">
+                        <form action="" name="search" method="get">
+                            <dl class="search">
+                                <dt>
+                                    <input type="text" name="search" value="" placeholder="検索ワードを入力" />
+                                </dt>
+                                <dd>
+                                    <button><span></span></button>
+                                </dd>
+                            </dl>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
         <!--メニューバー-->
-        <div id="header02">
+        <div id="navigation">
             <nav>
                 <ul>
                     <li id="nav01"><a href="dummy.html">個人のお客様</a></li>
@@ -73,24 +64,21 @@
         <div id="body">
             <div id="main">
                 <!--回転するところ-->
-                <div id="main01">
-                	<div id="slide">
-                		<img src="resource/images/new1.jpg" id="slideImg">
-                	</div>
-                	<div id="slideBtn">
-                		<ul>
-                			<li id="slide1"><a href="#">slide1</a></li>
-							<li id="slide2"><a href="#">slide2</a></li>
-							<li id="slide3"><a href="#">slide3</a></li>
-                		</ul>
-
-                	</div>
-
-                	<script type="text/javascript" src="resource/js/slide.js"></script>
+                <div id="main_slide">
+                    <div id="slide">
+                        <img src="resource/images/new1.jpg" id="slideImg">
+                    </div>
+                    <div id="slideBtn">
+                        <ul>
+                            <li id="slide1"><a href="#"></a></li>
+                            <li id="slide2"><a href="#"></a></li>
+                            <li id="slide3"><a href="#"></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <!--個人のお客様から採用情報-->
-                <div id="main02">
-                    <div class="main02_box1">
+                <div id="main_contents">
+                    <div class="contents_box1">
                         <p>個人のお客様</p>
                         <ul>
                             <li><a href="dummy.html">口座をひらく</a></li>
@@ -101,7 +89,7 @@
                             <li><a href="dummy.html">キャンペーン一覧</a></li>
                         </ul>
                     </div>
-                    <div class="main02_box1">
+                    <div class="contents_box1">
                         <p>法人のお客様</p>
                         <ul>
                             <li><a href="dummy.html">口座をひらく</a></li>
@@ -112,14 +100,14 @@
                             <li><a href="dummy.html">Global Website</a></li>
                         </ul>
                     </div>
-                    <div class="main02_box2">
+                    <div class="contents_box2">
                         <p>株主・投資家の皆様</p>
                         <ul>
                             <li><a href="dummy.html">決済公告</a></li>
                             <li><a href="dummy.html">社債情報</a></li>
                         </ul>
                     </div>
-                    <div class="main02_box2">
+                    <div class="contents_box2">
                         <p>採用情報</p>
                         <ul>
                             <li><a href="dummy.html">新卒採用</a></li>
@@ -129,13 +117,21 @@
                     </div>
                 </div>
                 <!--ニューストピック欄-->
-                <div id="main03">
+                <div id="main_tab">
                     <div id="tabcontrol">
                         <ul>
-                            <div class="tabC1"><li><a href="#tabpage1" alt="新着情報"></a></li></div>
-                            <div class="tabC2"><li><a href="#tabpage2" alt="ニュースリリース"></a></li></div>
-                            <div class="tabC3"><li><a href="#tabpage3" alt="キャンペーン"></a></li></div>
-                            <div class="tabC4"><li><a href="#tabpage4" alt="お知らせ"></a></li></div>
+                            <div class="tabC1">
+                                <li><a href="#tabpage1" alt="新着情報"></a></li>
+                            </div>
+                            <div class="tabC2">
+                                <li><a href="#tabpage2" alt="ニュースリリース"></a></li>
+                            </div>
+                            <div class="tabC3">
+                                <li><a href="#tabpage3" alt="キャンペーン"></a></li>
+                            </div>
+                            <div class="tabC4">
+                                <li><a href="#tabpage4" alt="お知らせ"></a></li>
+                            </div>
                         </ul>
                     </div>
                     <div id="tabbody">
@@ -194,13 +190,12 @@
                             </ul>
                         </div>
                     </div>
-                    <script type="text/javascript" src="resource/js/tab.js"></script>
                 </div>
             </div>
             <!--右側サイド-->
             <div id="sub">
                 <!--インターネットバンク-->
-                <div id="sub01">
+                <div id="sub_login">
                     <p class="topic">インターネットバンキング</p>
                     <p>せらく銀行インターネットバンキング</p>
                     <a href="dummy.html"><img src="resource/images/login_01.png" alt="ログインサービス"></a>
@@ -210,17 +205,17 @@
                     <a href="dummy.html">パスワードを忘れてた方はこちら</a>
                 </div>
                 <!--サービスのご案内-->
-                <div id="sub02">
+                <div id="sub_contents">
                     <p class="topic">サービスのご案内</p>
-                    <div class="sub02_01"><a href="dummy.html" alt="店舗/ATM"></a></div>
-                    <div class="sub02_02"><a href="dummy.html" alt="資料請求"></a></div>
-                    <div class="sub02_03"><a href="dummy.html" alt="金利一覧"></a></div>
-                    <div class="sub02_04"><a href="dummy.html" alt="手数料"></a></div>
-                    <div class="sub02_05"><a href="dummy.html" alt="よくあるご質問"></a></div>
-                    <div class="sub02_06"><a href="dummy.html" alt="投資信託基準価格"></a></div>
+                    <div class="sub_contents1"><a href="dummy.html" alt="店舗/ATM"></a></div>
+                    <div class="sub_contents2"><a href="dummy.html" alt="資料請求"></a></div>
+                    <div class="sub_contents3"><a href="dummy.html" alt="金利一覧"></a></div>
+                    <div class="sub_contents4"><a href="dummy.html" alt="手数料"></a></div>
+                    <div class="sub_contents5"><a href="dummy.html" alt="よくあるご質問"></a></div>
+                    <div class="sub_contents6"><a href="dummy.html" alt="投資信託基準価格"></a></div>
                 </div>
                 <!--その他ご案内3-->
-                <div id="sub03">
+                <div id="sub_other">
                     <ul>
                         <li><a href="dummy.html"><img src="resource/images/banner_01.png" alt="口座のご案内"></a></li>
                         <li><a href="dummy.html"><img src="resource/images/banner_02.png" alt="金融経済ニュース"></a></li>
@@ -234,7 +229,7 @@
         </div>
     </div>
     <div id="footer">
-        <div id="footer01">
+        <div id="footerArea">
             <div class="footer_box">
                 <p>個人のお客様</p>
                 <ul>
@@ -288,19 +283,22 @@
                 </ul>
             </div>
         </div>
-        <div id="footer02">
+        <div id="footer_navi">
             <ul>
                 <li><a href="dummy.html">お客様の個人情報保護について</a></li>
                 <li><a href="dummy.html">金融商品勧誘方針</a></li>
                 <li><a href="dummy.html">法人等のお客様の情報について</a></li>
                 <li><a href="dummy.html">本サイトのご利用にあたって</a></li>
-                <li><a href="dummy.html">反社会的勢力に対する基本方針</a></li>
+                <li><a href="dummy.html">反社会的勢力に対する基本方針</a>｜</li>
             </ul>
         </div>
         <address>
             <p id="copyright"><small>Copyright&copy;2015 Seraku Banking Corporation.All Rights Reserved.</small></p>
         </address>
     </div>
+    <script type="text/javascript" src="resource/js/fontSize.js"></script>
+    <script type="text/javascript" src="resource/js/slide.js"></script>
+    <script type="text/javascript" src="resource/js/tab.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@ var fontSizeL = document.getElementById('fontSizeL');
 
 
 fontSizeS.onclick = function smaller(){
-	document.body.style.fontSize = '50%';
+	document.body.style.fontSize = '80%';
 }
 
 fontSizeM.onclick = function middiam(){
@@ -12,5 +12,5 @@ fontSizeM.onclick = function middiam(){
 }
 
 fontSizeL.onclick = function large(){
-	document.body.style.fontSize = '150%';
+	document.body.style.fontSize = '110%';
 }

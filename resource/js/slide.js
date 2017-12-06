@@ -2,8 +2,9 @@ var image = new Array("new1.jpg", "new2.jpg", "new3.jpg");
 var slide1 = document.getElementById("slide1");
 var slide2 = document.getElementById("slide2");
 var slide3 = document.getElementById("slide3");
-
-count = 0;
+//スライドショー動く_bk
+//最初をslide1にするため
+count = -1;
 
 Timer();
 
@@ -16,6 +17,11 @@ function Timer() {
 	//次のタイマー呼びだし
 	setTimeout("Timer()",5000); 
 }
+
+
+
+
+
 
  slide1.onclick = function slide1(){
  	document.getElementById('slideImg').src = "resource/images/" + image[0];
