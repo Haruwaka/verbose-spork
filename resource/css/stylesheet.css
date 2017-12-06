@@ -355,6 +355,24 @@ nav ul li a {
 #slide{
     width: 650px;
     height: 300px;
+    background-image: url("../images/new1.jpg");
+    position: relative;
+    /* clip: rect(20px, 130px, 100px, 30px); */
+}
+
+#slide_font{
+    width: 650px;
+    height: 300px;
+    position: absolute;
+}
+
+#slide_font{
+    position: absolute;
+    clip: rect(20px, 130px, 100px, 30px);
+}
+
+#slide_out{
+    position: absolute;
 }
 
 #slideBtn{
