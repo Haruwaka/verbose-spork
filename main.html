@@ -5,6 +5,8 @@
     <meta charset="utf-8" 　content="コーディング課題">
     <title>seraku_bank</title>
     <link rel="stylesheet" href="resource/css/stylesheet.css">
+    <link rel="stylesheet" href="resource/slick/slick.css">
+    <link rel="stylesheet" href="resource/slick/slick-theme.css">
 </head>
 
 <body>
@@ -65,25 +67,21 @@
             <div id="main">
                 <!--回転するところ-->
                 <div id="main_slide">
-                    <div id="slide">
-                        <img src="resource/images/new1.jpg" id="slideImg">
-                        <!-- スライドテスト -->
-                        <div id="slide_font">
-                            <img src="resource/images/fontsize_l.png" border="0" id="fontImg">
-                        </div> 
-                        <div id="slide_out">
-                            <img src="resource/images/fontsize_l.png" border="0" id="fontImg">
-                        </div>
-                        <!-- スライドテスト -->
-                    </div>
-                    <div id="slideBtn">
-                        <ul>
-                            <li id="slide1"><a href="#"></a></li>
-                            <li id="slide2"><a href="#"></a></li>
-                            <li id="slide3"><a href="#"></a></li>
-                        </ul>
-                    </div>
+                            
+                    <ul class="slide">
+                        <li><img src="resource/images/new1.jpg"></li>
+                        <li><img src="resource/images/new2.jpg"></li>
+                        <li><img src="resource/images/new3.jpg"></li>
+                    </ul>
+                
+                    <ul class="slider_thumb">
+                        <li><a href="#"><img src="resource/images/thum_1.jpg"></a></li>
+                        <li><a href="#"><img src="resource/images/thum_2.jpg"></a></li>
+                        <li><a href="#"><img src="resource/images/thum_3.jpg"></a></li>
+                    </ul>
+                
                 </div>
+
                 <!--個人のお客様から採用情報-->
                 <div id="main_contents">
                     <div class="contents_box1">
@@ -297,15 +295,17 @@
                 <li><a href="dummy.html">金融商品勧誘方針</a></li>
                 <li><a href="dummy.html">法人等のお客様の情報について</a></li>
                 <li><a href="dummy.html">本サイトのご利用にあたって</a></li>
-                <li><a href="dummy.html">反社会的勢力に対する基本方針</a>｜</li>
+                <li><a href="dummy.html">反社会的勢力に対する基本方針</a></li>
             </ul>
         </div>
         <address>
             <p id="copyright"><small>Copyright&copy;2015 Seraku Banking Corporation.All Rights Reserved.</small></p>
         </address>
     </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="resource/js/fontSize.js"></script>
-    <script type="text/javascript" src="resource/js/slide.js"></script>
+    <script type="text/javascript" src="resource/slick/slick.js"></script>
+    <!-- <script type="text/javascript" src="resource/js/test.js"></script> -->
     <script type="text/javascript" src="resource/js/tab.js"></script>
 </body>
 

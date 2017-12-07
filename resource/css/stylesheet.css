@@ -253,14 +253,6 @@ nav ul {
 }
 
 
-/*
-nav ul li{
-    float: left;
-    width: 180px;
-    list-style-type: none;
-}
-*/
-
 nav ul li#nav01,
 nav ul li#nav02,
 nav ul li#nav04,
@@ -349,74 +341,31 @@ nav ul li a {
     border-width: medium;
     border-color: #1e205d;
     width: 650px;
+    height: 395px;
     margin: 10px auto;
 }
 
-#slide{
-    width: 650px;
-    height: 300px;
-    background-image: url("../images/new1.jpg");
-    position: relative;
-    /* clip: rect(20px, 130px, 100px, 30px); */
+.slide {
+  margin: 0 auto;
+  color: #333;
+
+  width: 650px;
+/*     position: relative; */
+
 }
 
-#slide_font{
-    width: 650px;
-    height: 300px;
-    position: absolute;
-}
 
-#slide_font{
-    position: absolute;
-    clip: rect(20px, 130px, 100px, 30px);
-}
 
-#slide_out{
-    position: absolute;
-}
 
-#slideBtn{
-    width: max;
+
+
+.slider_thumb{
     height: 95px;
-    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 20px 13px 13px 20px;
     background-color: #1e205d;
     text-align: center;
-}
-
-#slideBtn ul{
-    overflow: hidden;
-    padding: 18px 10px;
-    list-style-type: none;
-}
-
-#slideBtn ul li{
-    float: left;
-    width: 33%;
-    height: 60px;
-}
-
-
-#slideBtn ul li a{
-    overflow: hidden;
-    display: block;
-    padding-top: 60px;
-    height: 0;
-    margin: auto 4px;
-}
-
-ul #slide1 a{
-    background-image:  url("../images/thum_1.jpg");
-    background-repeat: no-repeat;
-}
-
-ul #slide2 a{
-    background-image:  url("../images/thum_2.jpg");
-    background-repeat: no-repeat;
-}
-
-ul #slide3 a{
-    background-image:  url("../images/thum_3.jpg");
-    background-repeat: no-repeat;
 }
 
 
@@ -715,7 +664,6 @@ ul #slide3 a{
 
 #footerArea ul{
     width: 100%;
-    /* text-align: center; */
     list-style-position: inside;
 }
 
@@ -759,7 +707,8 @@ ul #slide3 a{
 
 #footer_navi {
     clear: both;
-    width: 100%;
+    overflow: hidden;
+    width: max;
     height: 40px;
     background-color: #ffffff;
     text-align: center;
@@ -768,11 +717,13 @@ ul #slide3 a{
 
 #footer_navi ul{
     padding-top: 8px;
+    width: 963px;
+    margin: auto;
 }
 
 #footer_navi ul li {
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     background-color: #ffffff;
     border-left:1px solid #999;
     padding-left: 8px;
