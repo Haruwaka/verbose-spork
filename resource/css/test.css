@@ -1,16 +1,24 @@
-.main_slide{
-    border: 1px;
+.slide{
+	border: 1px;
     border-style: solid;
     border-width: medium;
     border-color: #1e205d;
+    background-color: #1e205d;
     width: 650px;
+    height: 400px;
     margin: 10px auto;
     position: relative;
+
+}
+
+.main_slide{
+    width: 650px;
+    margin: auto;
 }
 
 .main_slide ul {
-  width: 100%;
-/*     position: relative; */
+	width: 100%;
+	margin: auto;
 }
 
 .main_slide ul li{
@@ -25,84 +33,50 @@
 	width: 100%;
 }
 
-.slider_thumb{
-    width: 100%;
-    height: 95px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding: 20px 13px 13px 20px;
-    background-color: #1e205d;
-    text-align: center;
-    position: absolute;
-}
-
-.slider_thumb a{
-	display: inline-block;
-	overflow: hidden;
-
-}
-
-/* PagiNation
---------------------------- */
-.pagiNation {
-	bottom: 20px;
+.slider_thumb {
+	margin-top: 20px;
 	left: 0;
 	width: 100%;
-	height: 15px;
 	text-align: center;
-	position: absolute;
 	z-index: 110;
 }
 
-.pagiNation a {
+.slider_thumb ul{
+	margin: auto;
+}
+
+.slider_thumb li {
+	list-style-type: none;
+	width: 33%;
+	text-align: center;
+}
+
+.slider_thumb a {
 	margin: 0 5px;
-	width: 15px;
-	height: 15px;
+	width: 200px;
+	height: 60px;
 	display: inline-block;
 	overflow: hidden;
-	background: #aaa;
 	border: #fff 2px solid;
-	border-radius: 50%;
 	transition: all 0.2s ease-in-out;
 }
 
-.pagiNation a:hover {
+.slider_thumb a:hover {
 	opacity: 0.6;
 }
 
-.pagiNation a.pnActive {
-	background: #000;
-}
-
-.pagiNation a.pnActive:hover {
+.slider_thumb a.pnActive:hover {
 	opacity: 1;
 }
 
-
-/* SideNavi
-------------------------- */
-.main_slide .btnPrev,
-.main_slide .btnNext {
-	margin-top: -25px;
-	top: 50%;
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	z-index: 105;
-	transition: all 0.2s ease-in-out;
+.thumb1 {
+	background-image: url("../images/thum_1.jpg");
 }
 
-.main_slide .btnPrev {
-	left: 15px;
-	background: transparent url(../img/btnPrev.png) no-repeat center center;
+.thumb2 {
+	background-image: url("../images/thum_2.jpg");
 }
 
-.main_slide .btnNext {
-	right: 15px;
-	background: transparent url(../img/btnNext.png) no-repeat center center;
-}
-
-.main_slide .btnPrev:hover,
-.main_slide .btnNext:hover {
-	opacity: 0.6;
+.thumb3 {
+	background-image: url("../images/thum_3.jpg");
 }

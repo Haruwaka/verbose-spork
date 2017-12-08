@@ -37,14 +37,17 @@
 
 #footer {
     clear: both;
-    background-color: #fff8cc;
     height: 489px;
     /* width: 1343px; */
     width: max;
-    background-image: url("../images/footer_bg.jpg");
-    background-size: width auto;
+    background : url("../images/footer_bg.jpg"), linear-gradient(to bottom, #fff, #1e214c 6.3%);
+    background-size: auto max;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 90%;
+}
+
+#footer img{
+    vertical-align: middle;
 }
 
 #main {
@@ -335,38 +338,90 @@ nav ul li a {
     float: left;
 }
 
-#main_slide{
+.slide{
     border: 1px;
     border-style: solid;
     border-width: medium;
     border-color: #1e205d;
-    width: 650px;
-    height: 395px;
-    margin: 10px auto;
-}
-
-.slide {
-  margin: 0 auto;
-  color: #333;
-
-  width: 650px;
-/*     position: relative; */
-
-}
-
-
-
-
-
-
-.slider_thumb{
-    height: 95px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding: 20px 13px 13px 20px;
     background-color: #1e205d;
+    width: 650px;
+    height: 400px;
+    margin: 10px auto;
+    position: relative;
+
+}
+
+
+.main_slide{
+    width: 650px;
+    margin: auto;
+}
+
+.main_slide ul {
+    width: 100%;
+    margin: auto;
+}
+
+.main_slide ul li{
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+
+.main_slide ul li img{
+    width: 100%;
+}
+
+.slider_thumb {
+    margin-top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 110;
+}
+
+.slider_thumb ul{
+    margin: auto;
+}
+
+.slider_thumb li {
+    list-style-type: none;
+    width: 33%;
     text-align: center;
 }
+
+.slider_thumb a {
+    margin: 0 5px;
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+    overflow: hidden;
+    border: #fff 2px solid;
+    transition: all 0.2s ease-in-out;
+}
+
+.slider_thumb a:hover {
+    opacity: 0.6;
+}
+
+.slider_thumb a.pnActive:hover {
+    opacity: 1;
+}
+
+.thumb1 {
+    background-image: url("../images/thum_1.jpg");
+}
+
+.thumb2 {
+    background-image: url("../images/thum_2.jpg");
+}
+
+.thumb3 {
+    background-image: url("../images/thum_3.jpg");
+}
+
 
 
 #main_contents{
